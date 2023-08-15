@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import {AppProgressBar as ProgressBar} from "next-nprogress-bar";
 
 import {usePathname} from "next/navigation";
 const NavBar = () => {
@@ -15,6 +17,7 @@ const NavBar = () => {
           </Link>
         </div>
       </div>
+      <ProgressBar height='6px' color='#f97316' options={{showSpinner: false}} shallowRouting />
     </>
   );
 };
